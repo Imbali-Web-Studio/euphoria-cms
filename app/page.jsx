@@ -53,7 +53,7 @@ export default async function Home() {
           <div className="section-inner">
             <div className="about-grid">
               <div className="about-img-wrap fade-up">
-                <img className="about-img" src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=900&auto=format&fit=crop&q=80" alt="Euphoria lounge interior" width={900} height={1125} loading="lazy" />
+                <img className="about-img" src="/images/euphoria-about.png" alt="Euphoria lounge interior" width={900} height={1125} loading="lazy" />
                 <div className="about-img-accent" aria-hidden="true"></div>
                 <div className="about-img-badge"><strong>21+</strong><span>Premium</span><span>Experience</span></div>
               </div>
