@@ -1296,16 +1296,10 @@ nav button {
 }
 
 .parties-card {
-  background: var(--dark-5);
-  padding: 2.5rem 2rem;
-  border-top: 2px solid transparent;
-  text-align: center;
-  transition: border-color 0.3s var(--transition), background 0.3s var(--transition);
-}
-
-.parties-card:hover {
-  border-top-color: var(--gold);
   background: var(--dark-4);
+  padding: 2.5rem 2rem;
+  border-top: 2px solid var(--gold);
+  text-align: center;
 }
 
 .parties-card-icon {
