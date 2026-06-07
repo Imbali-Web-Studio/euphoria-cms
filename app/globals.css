@@ -804,7 +804,8 @@ nav button {
 /* ── About ── */
 .about-section {
   padding: 120px 0;
-  background: var(--dark-2);
+  background: #f8f5f0;
+  position: relative;
 }
 
 .about-grid {
@@ -987,7 +988,8 @@ nav button {
 /* ── Menu ── */
 .menu-section {
   padding: 120px 0;
-  background: var(--dark-1);
+  background: #f8f5f0;
+  position: relative;
 }
 
 .menu-tabs {
@@ -1333,7 +1335,8 @@ nav button {
 /* ── Gallery ── */
 .gallery-section {
   padding: 120px 0;
-  background: var(--dark-2);
+  background: #f8f5f0;
+  position: relative;
 }
 
 .gallery-wrap {
@@ -1407,7 +1410,7 @@ nav button {
 /* ── Reservation ── */
 .reservation-section {
   padding: 120px 0;
-  background: var(--dark-4);
+  background: #f8f5f0;
   position: relative;
 }
 
@@ -1548,6 +1551,100 @@ nav button {
 
 .form-submit {
   margin-top: 0.5rem;
+}
+
+
+/* ── Light section typography & transitions ── */
+.about-section::before,
+.menu-section::before,
+.gallery-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gold-line);
+}
+
+.about-section .section-heading,
+.menu-section .section-heading,
+.gallery-section .section-heading,
+.reservation-section .section-heading,
+.reservation-section .reservation-info h2 {
+  color: #1a1a1a;
+}
+
+.about-section .body-copy,
+.menu-section .body-copy,
+.gallery-section .body-copy,
+.reservation-section .body-copy,
+.reservation-section .reservation-info > p {
+  color: #333333;
+}
+
+.about-section .about-stat span {
+  color: #555555;
+}
+
+.about-section .about-stats {
+  border-top-color: rgba(201, 168, 76, 0.25);
+}
+
+.menu-section .menu-tabs {
+  border-bottom-color: rgba(201, 168, 76, 0.25);
+}
+
+.menu-section .menu-tab {
+  color: #555555;
+}
+
+.menu-section .menu-tab:hover,
+.menu-section .menu-tab.active {
+  color: var(--gold);
+}
+
+.menu-section .menu-grid {
+  background: rgba(201, 168, 76, 0.12);
+}
+
+.menu-section .menu-item {
+  background: #ffffff;
+}
+
+.menu-section .menu-item:hover {
+  background: #faf8f5;
+}
+
+.menu-section .menu-item-name {
+  color: #1a1a1a;
+}
+
+.menu-section .menu-item-desc {
+  color: #555555;
+}
+
+.reservation-section .res-contact-item,
+.reservation-section .res-contact-item a {
+  color: #333333;
+}
+
+.reservation-section .form-group label {
+  color: #555555;
+}
+
+.reservation-section .form-group input,
+.reservation-section .form-group select,
+.reservation-section .form-group textarea {
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #d4d0c8;
+  border-left: 3px solid transparent;
+}
+
+.reservation-section .form-group select option {
+  background: #ffffff;
+  color: #333333;
 }
 
 /* ── Daily Specials ── */
