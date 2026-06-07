@@ -635,11 +635,11 @@ nav button {
 }
 
 .hero-title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: clamp(3.2rem, 9vw, 7.5rem);
-  font-weight: 700;
   line-height: 0.95;
-  letter-spacing: 0.05em;
   color: var(--white);
   margin-bottom: 0.5rem;
   animation: heroIn 1.4s 0.2s var(--transition) both;
@@ -650,10 +650,10 @@ nav button {
 }
 
 .hero-subtitle {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 70px;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: calc(0.15em - 5px);
   color: var(--white-dim);
   margin-bottom: 0.6rem;
@@ -767,10 +767,10 @@ nav button {
 }
 
 .section-heading {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 600;
-  letter-spacing: 0.05em;
   line-height: 1.1;
   color: var(--white);
   margin-bottom: 1rem;
@@ -933,10 +933,10 @@ nav button {
 }
 
 .hours-day {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
   color: var(--gold);
   margin-bottom: 1.2rem;
 }
@@ -1049,11 +1049,12 @@ nav button {
 }
 
 .menu-panel-title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: 1.2rem;
   color: var(--gold);
   margin-bottom: 1rem;
-  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
@@ -1178,12 +1179,12 @@ nav button {
 }
 
 .event-title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: 1.1rem;
-  font-weight: 600;
   color: var(--white);
   margin-bottom: 0.5rem;
-  letter-spacing: 0.05em;
 }
 
 .event-desc {
@@ -1310,10 +1311,10 @@ nav button {
 }
 
 .parties-card h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
   color: var(--white);
   margin-bottom: 0.7rem;
 }
@@ -1423,10 +1424,10 @@ nav button {
 }
 
 .reservation-info h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
-  letter-spacing: 0.05em;
   line-height: 1.15;
   color: var(--white);
   margin-bottom: 1.5rem;
@@ -1581,9 +1582,10 @@ nav button {
 }
 
 .special-name {
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
   letter-spacing: 0.08em;
+  font-size: 1rem;
   color: var(--white);
   margin-bottom: 0.7rem;
 }
@@ -1741,9 +1743,10 @@ nav button {
 }
 
 .social-text h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: 1.5rem;
-  font-weight: 600;
   color: var(--white);
   margin-bottom: 0.4rem;
 }
@@ -1810,10 +1813,10 @@ nav button {
 }
 
 .footer-col h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 1.4rem;
