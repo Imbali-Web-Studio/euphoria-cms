@@ -97,8 +97,13 @@ nav button {
   right: 0;
   z-index: 1001;
   height: var(--top-bar-height);
-  background: var(--black);
+  background: #ffffff;
+  color: #1a1a1a;
   border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+}
+
+.top-bar a {
+  color: #1a1a1a;
 }
 
 .top-bar-inner {
@@ -180,7 +185,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: #1a1a1a;
   text-decoration: none;
   font-size: 0.65rem;
   transition: color 0.3s var(--transition), border-color 0.3s var(--transition);
