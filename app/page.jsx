@@ -10,8 +10,10 @@ async function getContent() {
     const { data } = await Storyblok.get('cdn/stories/home', {
       version: process.env.NODE_ENV === 'development' ? 'draft' : 'published',
     })
+    console.log('Storyblok body:', JSON.stringify(data.story.content.body, null, 2))
     return data.story.content
   } catch (e) {
+    console.error('Storyblok error:', e.message)
     return {}
   }
 }

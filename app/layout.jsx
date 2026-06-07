@@ -1,5 +1,6 @@
 import './globals.css'
 import ScrollAnimations from './ScrollAnimations'
+import StoryblokProvider from '../components/StoryblokProvider'
 
 export const metadata = {
   title: 'Euphoria Lounge, Bar & Restaurant | Humble, Houston TX',
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
         <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.20/dist/hls.min.js"></script>
       </head>
       <body>
-        {children}
+        <StoryblokProvider>
+          {children}
+        </StoryblokProvider>
         <ScrollAnimations />
       </body>
     </html>

@@ -14,12 +14,9 @@ if (!csvFile) {
   process.exit(1)
 }
 
-const lines = fs.readFileSync(path.resolve(csvFile), 'utf8').trim().split('\n')
-const headers = lines[0].split(',').map(h => h.trim())
-const rows = lines.slice(1).map(line => {
-  const values = line.split(',').map(v => v.trim().replace(/^"|"$/g, ''))
-  return Object.fromEntries(headers.map((h, i) => [h, values[i]]))
-})
+const { parse } = require('csv-parse/sync')
+const fileContent = fs.readFileSync(path.resolve(csvFile), 'utf8')
+const rows = parse(fileContent, { columns: true, skip_empty_lines: true, trim: true })
 
 async function run() {
   try {
