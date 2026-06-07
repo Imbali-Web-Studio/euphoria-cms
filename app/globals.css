@@ -767,9 +767,10 @@ nav button {
 }
 
 .section-heading {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 600;
+  letter-spacing: 0.05em;
   line-height: 1.1;
   color: var(--white);
   margin-bottom: 1rem;
@@ -1422,8 +1423,10 @@ nav button {
 }
 
 .reservation-info h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
   line-height: 1.15;
   color: var(--white);
   margin-bottom: 1.5rem;
