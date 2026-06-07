@@ -8,7 +8,7 @@ import HeroVideo from '../components/HeroVideo'
 async function getContent() {
   try {
     const { data } = await Storyblok.get('cdn/stories/home', {
-      version: 'draft',
+      version: process.env.NODE_ENV === 'development' ? 'draft' : 'published',
     })
     return data.story.content
   } catch (e) {

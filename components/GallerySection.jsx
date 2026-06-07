@@ -18,11 +18,12 @@ export default function GallerySection({ galleryImages = [] }) {
               >
                 {item.image?.filename && (
                   <img
-                    src={item.image.filename}
+                    src={item.image?.filename}
                     alt={item.alt || 'Euphoria gallery image'}
                     width={900}
                     height={600}
                     loading="lazy"
+                    crossOrigin="anonymous"
                   />
                 )}
               </div>

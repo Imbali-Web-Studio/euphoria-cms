@@ -11,7 +11,9 @@ const TABS = [
 export default function MenuSection({ menuItems = [] }) {
   const [activeTab, setActiveTab] = useState('appetizers')
 
-  const filtered = menuItems.filter(item => item.category === activeTab)
+  const filtered = menuItems.filter(item =>
+    item.category?.toLowerCase() === activeTab.toLowerCase()
+  )
 
   return (
     <section className="menu-section section" id="menu">
