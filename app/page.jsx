@@ -42,6 +42,10 @@ export default async function Home() {
               <a href="#menu" className="btn-ghost">View Menu</a>
             </div>
           </div>
+          <div className="hero-scroll" aria-hidden="true">
+            <span>Scroll</span>
+            <div className="scroll-line"></div>
+          </div>
         </section>
 
         {/* ABOUT */}
