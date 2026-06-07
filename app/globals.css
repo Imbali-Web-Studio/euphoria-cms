@@ -97,13 +97,13 @@ nav button {
   right: 0;
   z-index: 1001;
   height: var(--top-bar-height);
-  background: #ffffff;
-  color: #1a1a1a;
+  background: #0a0a0a;
+  color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(201, 168, 76, 0.12);
 }
 
 .top-bar a {
-  color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .top-bar-inner {
@@ -185,7 +185,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 0.65rem;
   transition: color 0.3s var(--transition), border-color 0.3s var(--transition);
