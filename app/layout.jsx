@@ -1,7 +1,7 @@
 import './globals.css'
 import ScrollAnimations from './ScrollAnimations'
 import StoryblokProvider from '../components/StoryblokProvider'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from 'next/script'
 
 export const metadata = {
   title: 'Euphoria Lounge, Bar & Restaurant | Humble, Houston TX',
@@ -23,8 +23,19 @@ export default function RootLayout({ children }) {
           {children}
         </StoryblokProvider>
         <ScrollAnimations />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XDPXSSDFTC`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XDPXSSDFTC');
+          `}
+        </Script>
       </body>
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
     </html>
   )
 }
