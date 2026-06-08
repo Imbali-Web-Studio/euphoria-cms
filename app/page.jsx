@@ -112,7 +112,7 @@ export default async function Home() {
                 </ul>
               </div>
               <div className="parties-visual fade-up d2">
-                <img src="https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=900&auto=format&fit=crop&q=80" alt="Private event at Euphoria" width={900} height={1125} loading="lazy" />
+                <img src="/images/space.png" alt="Private event at Euphoria" width={900} height={1125} loading="lazy" />
               </div>
             </div>
           </div>
