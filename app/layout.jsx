@@ -1,6 +1,7 @@
 import './globals.css'
 import ScrollAnimations from './ScrollAnimations'
 import StoryblokProvider from '../components/StoryblokProvider'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: 'Euphoria Lounge, Bar & Restaurant | Humble, Houston TX',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         </StoryblokProvider>
         <ScrollAnimations />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
     </html>
   )
 }
