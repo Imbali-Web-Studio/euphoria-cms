@@ -657,10 +657,11 @@ nav button {
 
 .hero-subtitle {
   font-family: 'Cinzel', serif;
-  font-size: 70px;
+  font-size: clamp(1.65rem, 5.5vw, 4.25rem);
   font-weight: 400;
   font-style: normal;
-  letter-spacing: calc(0.15em - 5px);
+  line-height: 1.15;
+  letter-spacing: 0.08em;
   color: var(--white-dim);
   margin-bottom: 0.6rem;
   animation: heroIn 1.4s 0.2s var(--transition) both;
@@ -1278,9 +1279,11 @@ nav button {
 }
 
 .parties-list li::before {
-  content: '♦';
-  color: var(--gold);
-  font-size: 0.5rem;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  transform: rotate(45deg);
   flex-shrink: 0;
 }
 
@@ -2175,6 +2178,11 @@ nav button {
 
   .hero-title {
     font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.45rem, 6.5vw, 2.35rem);
+    letter-spacing: 0.06em;
   }
 
   .hours-grid {
